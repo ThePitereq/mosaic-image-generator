@@ -1,0 +1,8 @@
+C:\Users\Msi\source\repos\AIProject3\AIProject3\bin\Debug\AIProject3.exe.config
+C:\Users\Msi\source\repos\AIProject3\AIProject3\bin\Debug\AIProject3.exe
+C:\Users\Msi\source\repos\AIProject3\AIProject3\bin\Debug\AIProject3.pdb
+C:\Users\Msi\source\repos\AIProject3\AIProject3\obj\Debug\AIProject3.csproj.AssemblyReference.cache
+C:\Users\Msi\source\repos\AIProject3\AIProject3\obj\Debug\AIProject3.csproj.SuggestedBindingRedirects.cache
+C:\Users\Msi\source\repos\AIProject3\AIProject3\obj\Debug\AIProject3.csproj.CoreCompileInputs.cache
+C:\Users\Msi\source\repos\AIProject3\AIProject3\obj\Debug\AIProject3.exe
+C:\Users\Msi\source\repos\AIProject3\AIProject3\obj\Debug\AIProject3.pdb
