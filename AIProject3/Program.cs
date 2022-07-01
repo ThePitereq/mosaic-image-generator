@@ -37,7 +37,7 @@ namespace AIProject3
             public int B;
         }
 
-        static void Main()
+        static void Main(string[] args)
         {
             int count = 0;
             Console.WriteLine($"Searching for suitable images in 'block' folder.");
@@ -144,8 +144,8 @@ namespace AIProject3
                 Console.Write("Scale Image? (1 block as X pixels): ");
                 while (scale == -1)
                     scale = Convert.ToInt32(Console.ReadLine());
-                try
-                {
+                //try
+                //{
                     //Pobiera czas aktualny, żeby na koniec było wiadomo ile to zajęło.
                     DateTime start = DateTime.Now;
                     int alreadyAddedCount = 0;
@@ -183,7 +183,7 @@ namespace AIProject3
                             //Sprawdzamy czy w cache kolorów jest już wartość, ta akcja skraca działanie AI ponad 4-krotnie.
                             if (rgbBlock.ContainsKey($"{pixel.R} {pixel.G} {pixel.B}"))
                             {
-                                string key = $"{currentDirectory}//blocks//{rgbBlock[$"{pixel.R} {pixel.G} {pixel.B}"]}";
+                                string key = $"{currentDirectory}\\block\\{rgbBlock[$"{pixel.R} {pixel.G} {pixel.B}"]}";
                                 //Dodajemy odpowiednik zdjęcia do pliku HTML.
                                 htmlFile.Append($"<img src=\"{key}\">");
                                 //Jeżeli zapisujemy do obrazu to totaj dodaje nasz blok do finalnego obrazu.
@@ -222,11 +222,11 @@ namespace AIProject3
                     Console.WriteLine($"Image generated in: {(DateTime.Now - start).TotalSeconds}s");
 
                     File.WriteAllText($"outputHTML/{filename}.html", htmlFile.ToString());
-                }
-                catch
-                {
-                    Console.WriteLine($"File {filename} is missing!");
-                }
+                //}
+                //catch
+                //{
+                //    Console.WriteLine($"File {filename} is missing!");
+                //}
             }
         }
 
